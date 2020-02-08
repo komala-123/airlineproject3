@@ -1,0 +1,29 @@
+package com.capgemini.airlinereservationsystem.services;
+
+import java.sql.Date;
+import java.time.LocalDate;
+
+import com.capgemini.airlinereservationsystem.exception.InvalidEntryException;
+
+public class TicketService {
+
+	public void view(int ticketid,String flighttype,String tickettype,int age,String from,	String to,LocalDate departuredate,LocalDate returndate ){
+
+		if(age<10){
+			throw new InvalidEntryException();
+		}
+
+		LocalDate d1 = LocalDate.now();
+		if(returndate != d1){
+			throw new InvalidEntryException();
+		}
+
+		if(departuredate!=d1){
+			throw new InvalidEntryException();	
+		}
+		
+
+	}
+
+
+}

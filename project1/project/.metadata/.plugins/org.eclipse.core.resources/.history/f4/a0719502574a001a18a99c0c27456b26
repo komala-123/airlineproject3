@@ -1,0 +1,10 @@
+package com.capgemini.airlinereservationsystem.services;
+
+public class TicketService {
+
+	public void view(){
+		
+	}
+	
+	
+}

@@ -1,0 +1,78 @@
+package com.capgemini.airlinereservationsystem.dto;
+
+import java.sql.Date;
+import java.sql.Time;
+
+public class TicketController {
+ private int ticketid;
+private String flighttype;
+private String tickettype;
+private int age;
+private String from;
+private String to;
+private  Date departuredate	;
+private Time 	returndate;
+public TicketController(int ticketid, String flighttype, String tickettype, int age, String from, String to,
+		Date departuredate, Time returndate) {
+	super();
+	this.ticketid = ticketid;
+	this.flighttype = flighttype;
+	this.tickettype = tickettype;
+	this.age = age;
+	this.from = from;
+	this.to = to;
+	this.departuredate = departuredate;
+	this.returndate = returndate;
+}
+public int getTicketid() {
+	return ticketid;
+}
+public void setTicketid(int ticketid) {
+	this.ticketid = ticketid;
+}
+public String getFlighttype() {
+	return flighttype;
+}
+public void setFlighttype(String flighttype) {
+	this.flighttype = flighttype;
+}
+public String getTickettype() {
+	return tickettype;
+}
+public void setTickettype(String tickettype) {
+	this.tickettype = tickettype;
+}
+public int getAge() {
+	return age;
+}
+public void setAge(int age) {
+	this.age = age;
+}
+public String getFrom() {
+	return from;
+}
+public void setFrom(String from) {
+	this.from = from;
+}
+public String getTo() {
+	return to;
+}
+public void setTo(String to) {
+	this.to = to;
+}
+public Date getDeparturedate() {
+	return departuredate;
+}
+public void setDeparturedate(Date departuredate) {
+	this.departuredate = departuredate;
+}
+public Time getReturndate() {
+	return returndate;
+}
+public void setReturndate(Time returndate) {
+	this.returndate = returndate;
+}
+
+
+	
+}
